@@ -1,0 +1,337 @@
+:root {
+  --hijau-tua: #14532d;
+  --hijau-daun: #1b5e20;
+  --hijau-sedang: #2e7d32;
+  --hijau-cerah: #43a047;
+  --hijau-muda: #a5d6a7;
+  --hijau-pucat: #c8e6c9;
+  --hijau-krem: #f1f8e9;
+  --latar: #e8f5e9;
+  --teks: #1b3a1f;
+  --putih: #ffffff;
+  --bayangan: 0 6px 18px rgba(27, 94, 32, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--teks);
+  background: linear-gradient(160deg, #e8f5e9 0%, #dcedc8 50%, #c8e6c9 100%)
+    fixed;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+body > table:first-of-type {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 18px 18px 0 0;
+
+  background-image:
+    linear-gradient(rgba(20, 83, 45, 0.25), rgba(20, 83, 45, 0.25)),
+    url(".vscode/green-background-with-gradient-concept-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--hijau-sedang);
+  box-shadow: var(--bayangan);
+  overflow: hidden;
+}
+
+body > table:first-of-type td {
+  padding: 28px 20px;
+  position: relative;
+}
+
+body > table:first-of-type img {
+  float: right;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 4px solid var(--hijau-pucat);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: var(--putih);
+}
+
+body > table:first-of-type h1 {
+  margin: 0 0 6px;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body > table:first-of-type h1 font {
+  color: var(--putih);
+}
+
+body > table:first-of-type i,
+body > table:first-of-type i font {
+  color: var(--hijau-pucat);
+  font-size: 1.1rem;
+}
+
+marquee {
+  display: block;
+  margin-top: 14px;
+  padding: 8px 0;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+marquee font {
+  color: var(--putih);
+  font-weight: 600;
+}
+
+body > table:nth-of-type(2) {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--putih);
+  box-shadow: var(--bayangan);
+}
+
+body > table:nth-of-type(2) > tbody > tr > td {
+  padding: 24px;
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child {
+  background: linear-gradient(180deg, var(--hijau-pucat), var(--hijau-muda));
+  border-right: 4px solid var(--hijau-cerah);
+  min-width: 210px;
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child h3 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px dashed var(--hijau-sedang);
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child h3 font {
+  color: var(--hijau-tua);
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child a {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  color: var(--hijau-tua);
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.55);
+  border-left: 4px solid var(--hijau-cerah);
+  border-radius: 0 10px 10px 0;
+  transition: all 0.25s ease;
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child a:hover {
+  background: var(--hijau-sedang);
+  color: var(--putih);
+  padding-left: 20px;
+  transform: translateX(4px);
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:first-child br {
+  display: none;
+}
+
+body > table:nth-of-type(2) > tbody > tr > td:last-child {
+  background: var(--putih);
+}
+
+h2 {
+  margin: 8px 0 14px;
+  padding-left: 14px;
+  border-left: 6px solid var(--hijau-cerah);
+  font-size: 1.5rem;
+}
+
+h2 font {
+  color: var(--hijau-sedang);
+}
+
+p {
+  text-align: justify;
+}
+
+hr {
+  height: 3px;
+  margin: 28px 0;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--hijau-cerah),
+    transparent
+  );
+}
+
+blockquote {
+  margin: 18px 0;
+  padding: 14px 20px;
+  background: var(--hijau-krem);
+  border-left: 6px solid var(--hijau-sedang);
+  border-radius: 0 14px 14px 0;
+  color: var(--hijau-tua);
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--hijau-daun);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--hijau-cerah);
+}
+
+table[border="1"] {
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(27, 94, 32, 0.15);
+}
+
+table[border="1"] td,
+table[border="1"] th {
+  border: 1px solid var(--hijau-muda);
+}
+
+table[border="1"]:not(:has(thead)) td {
+  background: var(--hijau-krem);
+  transition: background 0.25s ease;
+}
+
+table[border="1"]:not(:has(thead)) td:hover {
+  background: var(--hijau-pucat);
+}
+
+table[border="1"]:not(:has(thead)) small {
+  color: var(--hijau-sedang);
+  font-style: italic;
+}
+
+table[border="1"] thead th {
+  padding: 12px;
+  background: linear-gradient(135deg, var(--hijau-daun), var(--hijau-sedang));
+  letter-spacing: 0.5px;
+}
+
+table[border="1"] thead th font {
+  color: var(--putih);
+}
+
+table[border="1"] tbody tr:hover td {
+  background: var(--hijau-muda);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 14px 10px 44px;
+  background: var(--hijau-krem);
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+ul li::before {
+  content: "\1F33F";
+  position: absolute;
+  left: 14px;
+  top: 8px;
+}
+
+ul li:hover {
+  transform: translateX(6px);
+  background: var(--hijau-pucat);
+}
+
+section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--hijau-pucat);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(27, 94, 32, 0.25);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.03) rotate(-0.5deg);
+  box-shadow: 0 10px 24px rgba(27, 94, 32, 0.35);
+}
+
+body > table:last-of-type {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--hijau-sedang), var(--hijau-tua));
+  border-radius: 0 0 18px 18px;
+  box-shadow: var(--bayangan);
+  overflow: hidden;
+}
+
+body > table:last-of-type font {
+  color: var(--putih);
+}
+
+body > table:last-of-type a,
+body > table:last-of-type a font {
+  color: var(--hijau-pucat);
+}
+
+body > table:last-of-type a:hover font {
+  color: var(--putih);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 8px;
+  }
+
+  body > table:nth-of-type(2),
+  body > table:nth-of-type(2) > tbody,
+  body > table:nth-of-type(2) > tbody > tr,
+  body > table:nth-of-type(2) > tbody > tr > td {
+    display: block;
+    width: 100% !important;
+  }
+
+  body > table:nth-of-type(2) > tbody > tr > td:first-child {
+    border-right: 0;
+    border-bottom: 4px solid var(--hijau-cerah);
+  }
+
+  body > table:first-of-type img {
+    float: none;
+    display: block;
+    margin: 0 auto 12px;
+  }
+
+  body > table:first-of-type h1 {
+    font-size: 1.7rem;
+  }
+}
